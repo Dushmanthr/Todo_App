@@ -4,3 +4,12 @@
     background-color: aquamarine;
     padding-top: 3%;
 }
+
+.task-container{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 100px;
+
+}

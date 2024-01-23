@@ -3,9 +3,11 @@ import {useState} from 'react'
 
 import './home.css'
 import Createform from '../../Components/Create/Createform'
+import Card  from '../../Components/Card/Card'
 
 const Home = () => {
   const [modal, setModal] = useState(false);
+  const [taskList, setTaskList] = useState([])
 
   const toggle = () =>{
     setModal(!modal);
@@ -18,7 +20,12 @@ const Home = () => {
     </div>
 
     <div className='task-container'>
-
+     <Card /> 
+     <Card /> 
+     <Card /> 
+     <Card /> 
+     <Card /> 
+     <Card /> 
     </div>
 
    <Createform toggle= {toggle} modal={modal}/> 
